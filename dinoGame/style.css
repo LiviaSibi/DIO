@@ -1,0 +1,74 @@
+body{
+    background-color: #fafafa;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.seconds{
+    text-align: center;
+    color: #666666;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.dino{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    background-image: url('./img/dino.png');
+}
+
+.cactus{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0px;
+    background-image: url('./img/cactus.png');
+}
+
+.end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gameOver{
+    color: #666666;
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.tryAgain{
+    color: #666666;
+    padding: 12px 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    background-color: lightgray;
+    border: 2px #666666 solid;
+}
+
+@keyframes slideRight {
+    from{
+        background-position: 70000%;
+    }
+    to{
+        background-position: 0%;
+    }
+}
+
+.background{
+    position: absolute;
+    bottom: 0px;
+    background-image: url('./img/background.png');
+    background-repeat: repeat-x;
+    animation: slideRight 600s infinite linear;
+    -webkit-animation: slideRight 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
