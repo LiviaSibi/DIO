@@ -1,5 +1,7 @@
 # pokedex
 
+Projeto feito em Vue seguindo o curso de vue da Digital Innovation One (DIO).
+
 ## Project setup
 ```
 yarn install
